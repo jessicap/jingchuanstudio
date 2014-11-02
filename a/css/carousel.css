@@ -1,0 +1,534 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 0px;
+  color: #ffffff;
+  background-image:url('../pic/bg.png');
+  background-repeat:repeat;
+  font-family:Microsoft YaHei;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 540px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 540px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 540px;
+  
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-3 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius:10px;
+ 
+  margin:0 4%;
+  padding:0;
+   
+}
+.marketing h2 {
+  font-weight: bolder;
+  
+}
+.marketing .col-lg-3 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.marketing img{
+  -moz-box-shadow:0px 5px 5px #3d3d3d ;            
+  -webkit-box-shadow:0px 5px 5px #3d3d3d ;         
+  box-shadow:0px 5px 5px #3d3d3d ; 
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+/* jc-footer CSS
+---------------------------------------------------*/
+.jc-footer{
+  text-align:center;
+
+}
+.jc-footer p{
+  margin:0px;
+  padding-bottom:20px;
+  padding-top:20px;
+  
+}
+.jc-footer a{
+  color:#ffffff;
+ text-decoration:none;
+
+
+}
+.productshow{
+	width:1200px;
+	height:180px;
+	padding:20px 0;
+	margin:10px auto;
+	position:relative;
+	text-align:center;
+	font-family:微软雅黑, 黑体;
+	background-color:#000000;
+	top:10px;
+}
+.productshow .scrollcontainer{
+	width:1120px;
+	height:180px;
+	overflow:hidden;
+	position:relative;
+	margin:0 auto;
+}
+.productshow .scrollcontainer ul{
+	width:20000px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.productshow .scrollcontainer li{
+	float:left;
+	width:215px;
+	height:150px;
+	text-align:center;
+	list-style-type:none;
+	margin:0 20px;
+}
+.productshow .scrollcontainer li.last{
+	background:none;
+}
+.productshow .scrollcontainer li div{
+	height:150px;
+	width:215px;
+	overflow:hidden;
+	text-align:center;
+}
+.productshow .scrollcontainer a:hover img{
+	filter:alpha(opacity=86);-moz-opacity:0.86;opacity:0.86;
+}
+.productshow .scrollcontainer li p{
+	margin:0;
+	line-height:32px;
+}
+.footerinfo{
+   margin-top:30px;
+   
+
+}
+.footerinfo li{
+   list-style-type:none;
+}
+.footerinfo h2{
+   margin-top:0px;
+
+}
+/*-- 在线客服 --*/
+ .share-right a,
+		 .share-right a:link,
+		 .share-right a:visited {
+			color: #000;
+			text-decoration: none;
+		}
+
+		.share {
+			position: fixed;
+			background-color: #fff;
+			filter:alpha(opacity=90);-moz-opacity:0.90;opacity:0.90;
+			font-family:Microsoft YaHei;
+			color:#000;
+		}
+
+		.shareBtn {
+			color: #fff;
+			cursor: pointer;
+			position: absolute;
+			text-align: center;
+			background-color: #323232;
+		}
+
+		
+		.share-right {
+			top: 100px;
+			width: 140px;
+			height: 350px;
+		}
+
+		
+		.share-right {
+			right: 0px;
+		}
+
+		
+		.share-right .shareBtn {
+			top: 60px;
+			width: 30px;
+			padding:12px 3px 12px 3px;
+		}
+
+		.share-right .shareBtn {
+			right: 140px;
+		}
+	
+	    .share-right p span{
+		 
+		 display:block;
+		 color:#547816;
+		 }
+		
+		  .share-right li{list-style:none;}
+		 .share-right  em{font-size:13px;font-style:normal;}
+		 .share-right{
+		 
+		 text-align:center;
+		 }
+		 .share-right p,.share-right li{
+		 margin:10px 0;
+		 }
+		 .share-right h5{
+		 font-weight:normal;
+		 }
+		 .share-right{
+		 border:1px #000 solid;
+		 }
+/*BAIDUMAP css
+----------------------------------------------------*/
+.baidumap{
+  background-color:black;
+  margin-top:20px;
+}
+
+.baidumap .col-lg-7{
+	padding:0;
+
+}
+.baidumap .col-lg-5{
+	padding:0;
+
+}
+.baidumap .row {
+
+margin:0 10%;
+font-family:Microsoft YaHei;
+}
+.baidumap .row h2{
+
+font-family:Microsoft YaHei;
+}
+
+/* INTERNSHIP CSS
+--------------------------------------------------*/
+.internship{
+  background-color:black;
+  margin-top:20px;
+   -moz-box-shadow:0px 5px 5px #3d3d3d ;            
+  -webkit-box-shadow:0px 5px 5px #3d3d3d ;         
+  box-shadow:0px 5px 5px #3d3d3d ;
+}
+.internship .row{
+   margin:40px 3%;
+  
+}
+.intern-title {
+   width:300px;
+   height:60px;
+   font-family:Microsoft YaHei;
+}
+
+
+.interntrans{
+	width:500px;
+	height:90px;
+	border-bottom-right-radius: 10%;
+	border-bottom-left-radius: 10%;
+	z-index:10;
+	background-color:#000000;
+	filter:alpha(opacity=50);-moz-opacity:0.50;opacity:0.50;
+	top:231px;
+	position:absolute;
+	overflow:hidden;
+	
+}
+.interntrans-text{
+	position:relative;   
+	z-index: 21;
+	bottom:80px;
+	height:85px;
+	font-family:Microsoft YaHei;
+}
+.interntrans p{
+	float:left;
+	
+
+}
+
+
+/* WORK
+-------------------------------------------------------*/
+.work{
+  background-color:black;
+  margin-top:20px;
+    -moz-box-shadow:0px 5px 5px #3d3d3d ;            
+  -webkit-box-shadow:0px 5px 5px #3d3d3d ;         
+  box-shadow:0px 5px 5px #3d3d3d ;
+
+}
+
+.work-img-circle{
+    border-radius: 5%;
+	border:#3d3d3d 3px solid;
+}
+
+ .work .main{width:1100px;zoom:1;margin:0 auto;}
+    .work .item{width:1100px;overflow:hidden;margin:0 auto;}
+     .work ul{padding:0 70px;width:1000px;zoom:1;}
+     .work .clear{zoom:1;margin:20px auto;padding:0 auto;}
+     .work .clear:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+    .work ul li{list-style-type:none;float:left;background:#000000;font-size:60px;text-shadow:1px 1px 3px #555;width:200px;height:280px;line-height:200px;text-align:center;color:#fff;margin:5px;}
+     .work .page_btn{padding-top:20px;}
+     .work .page_btn a{cursor:pointer;padding:5px;border:solid 1px #ccc;font-size:12px;}
+     .work .page_box{float:right;height:40px;}
+     .work .num{padding:0 10px;}
+
+
+/*TEACHERS CSS
+----------------------------------------------------*/
+.teacher-title{
+   background:black;
+}
+
+.teacher-title p{
+  text-align:center;
+  width:50%;
+  margin:0 auto;
+  font-family:Microsoft YaHei;
+  padding:30px 0 50px 0;
+}
+
+.teacher-title h1{
+  font-family: SimHei,Microsoft YaHei, DFKai-SB,KaiTi;
+  text-align:center;
+  width:500px;
+  margin:0 auto;
+  padding:5px;
+  font-weight:bolder;
+}
+
+.teachers{
+	 background-color:black;
+  margin-top:20px;
+    -moz-box-shadow:0px 5px 5px #3d3d3d ;            
+  -webkit-box-shadow:0px 5px 5px #3d3d3d ;         
+  box-shadow:0px 5px 5px #3d3d3d ;
+}
+.teachers #teachers-jcinfo{
+  margin:20px 0;
+  padding:10px;
+}
+
+.teacher-info  #info{
+   background-color:black;
+  margin:20px 0;
+  
+    -moz-box-shadow:0px 5px 5px #3d3d3d ;            
+  -webkit-box-shadow:0px 5px 5px #3d3d3d ;         
+  box-shadow:0px 5px 5px #3d3d3d ;
+  border-radius:2%;
+  padding:50px 10px 20px 10px;
+   font-family:Microsoft YaHei;
+}
+.teacher-info h2,.teacher-info h3{
+ font-family:SimHei, Microsoft YaHei,Microsoft JhengHei;
+ font-weight:bolder;
+ text-align:center;
+}
+.teachers h4{
+  font-size:20px;
+  font-weight:bolder;
+
+}
+
+/* ABOUT CSS
+-------------------------------------------------- */
+.about-1{
+   background-color:black;
+  margin-top:20px;
+    -moz-box-shadow:0px 5px 5px #3d3d3d ;            
+  -webkit-box-shadow:0px 5px 5px #3d3d3d ;         
+  box-shadow:0px 5px 5px #3d3d3d ;
+}
+.about-1 #jcabout{
+    margin:20px 0;
+   padding:10px;
+}
+.about-1 p{
+    margin:20px 10px 20px 0;
+    padding:0px 30px 0 0px;
+	
+}
+.about-2{
+   background-color:black;
+  margin-top:20px;
+    -moz-box-shadow:0px 5px 5px #3d3d3d ;            
+  -webkit-box-shadow:0px 5px 5px #3d3d3d ;         
+  box-shadow:0px 5px 5px #3d3d3d ;
+}
+.about-1 h2,.about-2 h2{
+ font-family:Microsoft YaHei;
+ font-weight:bolder;
+}
+/* COURSE CSS
+-------------------------------------------------- */
+.course{
+  background-color:black;
+  margin-top:20px;
+   -moz-box-shadow:0px 5px 5px #3d3d3d ;            
+  -webkit-box-shadow:0px 5px 5px #3d3d3d ;         
+  box-shadow:0px 5px 5px #3d3d3d ;
+}
+.course .row{
+   margin:40px 3%;
+  
+}
+.course-img{
+  padding:0 auto;
+}
+
+.course h2{
+  font-family:Microsoft YaHei;
+ font-weight:100;
+ border-bottom:#ffffff 2px solid;
+ padding-bottom:10px;
+
+
+}
+
+
+
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .nav-wrap{
+  margin:0 auto;
+  width:800px;
+  height:60px;
+  
+  }
+  .navbar-wrapper .container {
+    padding-left:  15px;
+    padding-right: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-left:  0;
+    padding-right: 0;
+  }
+	.nav-en{
+	font-size:10px;
+
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}

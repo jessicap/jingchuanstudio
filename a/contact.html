@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://bp.315ok.org/examples/carousel/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+    <title>井川造型学院|jingchuanstudio.com - 联系我们 - Contact us</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+  
+a.abtn{
+	position:absolute;
+	top:65px;
+	display:block;
+	height:30px;
+	width:30px;
+	overflow:hidden;
+	text-indent:-20000px;
+	
+}
+a.aleft{
+	left:2px;
+	background:url(pic/gallery_button_left.png) 0px center no-repeat;
+
+	
+}
+a.agrayleft{
+	cursor:default;
+	
+	
+}
+a.aright{
+    right:2px;
+	background:url(pic/gallery_button_right.png) 0px center no-repeat
+}
+a.agrayright{
+	cursor:default;
+	
+}
+
+
+</style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../docs-assets/js/html5shiv.js"></script>
+      <script src="../../docs-assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="./css/carousel.css" rel="stylesheet">
+  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
+  <!--引用百度地图API-->
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <nav class="navbar navbar-inverse" role="navigation" >
+		 <div  class="nav-wrap">
+		   <div class="navbar-header">
+			  <a class="navbar-brand" href="index.htm">  <img src="./pic/logo.png" data-src="">
+          </a>
+		   </div>
+		   <div>
+			  <ul class="nav navbar-nav" >
+				 <li><a href="index.htm">首页<br><div class="nav-en">Home</div></a></li>
+				 <li class="dropdown">
+					<a href="about.html" >
+					   井川简介
+					   <br><div class="nav-en">About</div>
+					</a>
+					
+				 </li>
+				  <li class="dropdown">
+					<a href="course.html">
+					   热门课程
+					   <br><div class="nav-en">Course</div>
+					</a>
+				 </li>
+				  <li class="dropdown">
+					<a href="teachers.html" >
+					   师资介绍
+					   <br><div class="nav-en">Teachers</div>
+					</a>
+					
+				 </li>
+				 <li class="dropdown">
+					<a href="work.html">
+					   作品赏析
+					   <br><div class="nav-en">Work</div>
+					</a>
+					
+				 </li>
+				 <li class="dropdown">
+					<a href="internship.html" >
+					   实习就业
+					   <br><div class="nav-en">Internship</div>
+					</a>
+					
+				 </li>
+				
+				
+				 <li class="dropdown">
+					<a href="#">
+					   联系我们
+					   <br><div class="nav-en">Contact us</div>
+					</a>
+					
+				 </li>
+			  </ul>
+		   </div>
+		   </div>
+		</nav>
+
+ <!--百度地图容器-->
+ <div class="container baidumap">
+	<div class="row">
+		<div class="col-lg-5">
+			<img src="pic/tongfang.jpg" alt="" style="float:right;"/>
+			
+			</div>
+			<div class="col-lg-7">
+				<div style="width:550px;height:508px;border:#ccc solid 1px;" id="dituContent"></div>
+			</div>
+	
+	</div>
+	<div class="row">
+	<h2>学校地址：</h2>
+	<p>学校位于同方·国际广场杭州老城区的核心区块，地处秋涛路和艮山西路立交口，毗邻浙大华家池校区，衔接老城与钱江新城两大CBD。</p>
+	</div>
+	<div class="row">
+	<h2>到校路线：</h2>
+	<p>1、杭州萧山机场路线：机场大巴（武林们方向）→城战火车站下车→地铁一号线（文泽路方向）→火车东站(D出口)步行422米→到达</p>
+
+	<p>2、火车东站路线：火车东站（D出口）步行422米→到达</p>
+
+	<p>3、火车城战：地铁一号线（文泽路方向）→火车东站（D出口）步行422米→到达</p>
+	</div>
+	<div class="row" style="margin-top:20px;">
+		<div class="col-lg-6" style="padding:0;">
+		<p>咨询电话：0571-28957010&nbsp&nbsp0571-56135012&nbsp&nbsp 18767103598 </p>
+		<p>微       信：1263712393  </p>
+		<p>订阅号: bjwhstudio</p>
+		<p>招生QQ:    1263712393</p>
+		<p>邮       箱：1263712393@qq.com</p>
+		<p>官方微博：边井文化创意有限公司</p>
+		<p>学校地址：浙江省杭州市江干区秋涛北路257号同方国际大厦1511室</p>
+		</div>
+		<div class="col-lg-6">
+		<img src="pic/weixin.jpg" alt="" style="float:right;"/>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb783a1d3a79ee7447f64f5334b2bdf94' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+    
+</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/holder.js"></script>
+	<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(120.203033,30.280141);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"井川造型",content:"地址：杭州市江干区秋涛北路237号同方国际大厦1510室<br/>电话：0571-28957010，18767103598<br/>招生QQ：1263712393",point:"120.205781|30.280539",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+    
+
+
+ <footer style="background-color: #000000;border-color: #000000;width:100%;margin:20px auto 0 auto;">
+	<div class="jc-footer">
+		
+		   
+       
+      
+	
+	<div class="productshow">
+	<div class="scrollcontainer">
+		<ul>
+			<li>
+				<div><a href="###"><img src="pic/t1.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t2.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t3.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t4.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t5.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t6.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t7.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t8.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t9.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t10.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t11.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t12.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t13.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t14.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t15.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t16.png" alt="" /></a></div>
+				
+			</li>
+			<li>
+				<div><a href="###"><img src="pic/t17.png" alt="" /></a></div>
+				
+			</li>
+		
+			
+			
+		</ul>
+	</div>
+	<a class="abtn aleft" href="#left">左移</a>
+	<a class="abtn aright" href="#right">右移</a>
+   </div>
+   <div class="container footerinfo">
+   <div class="row">
+	<div class="col-lg-3" style="left:10px;">
+	<img src="pic/logo1.png" alt="" /> 
+   </div>
+   <div class="col-lg-5">
+	<ul><li>微       信：1263712393 &nbsp 374245330</li>
+	    <li>订阅号: bjwhstudio &nbsp招生QQ: 1263712393</li>
+		<li>邮       箱：1263712393@qq.com    官方微博：边井文化创意有限公司</li>
+		<li>地       址：浙江省杭州市江干区秋涛北路257号同方国际大厦1511室</li></ul> 
+   </div>
+   <div class="col-lg-4">
+	<h2>0571-28957010</h2>
+	<h2>0571-56135012</h2>
+   </div>
+   </div>
+   </div>
+     
+	 <p>版权所有 Copyright©2009-2015 边井文化创意有限公司&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp| <a href="about.html">关于我们</a>|<a href="contact.html"> 联系方式</a>| <a href="course.html">热门课程</a>| <a href="teachers.html">师资介绍</a>|&nbsp&nbsp&nbsp&nbsp<a href="http://weibo.com/jingchuanstudio"><img src="pic/wb.png" alt="" /></a>&nbsp&nbsp&nbsp&nbsp<a href="contact.html"> <img src="pic/wx.png" alt="" /></a></p>
+	</div>	
+      </footer>
+	  <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/Xslider.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	
+	//三、自动切换;
+	$(".productshow:eq(0)").Xslider({
+		unitdisplayed:5,
+		numtoMove:3,
+		unitlen:235,
+		autoscroll:2000  //自动移动间隔时间     默认null不自动移动;
+	});
+	
+	
+	
+	$("a").focus(function(){this.blur();});
+})
+</script>
+</html>
