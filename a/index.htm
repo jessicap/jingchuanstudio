@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="Access-Control-Allow-Origin" content="*">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0"/>
     <meta name="description" content="">
     <meta name="author" content="">
    
@@ -111,6 +111,12 @@ a.agrayright{
 					</a>
 					
 				 </li>
+				 <li class="dropdown">
+				 <div id="smohan_audio_bg">
+					<div id="smohan_audio" class="play" title="播放">
+				</div>
+				</li>
+		</div>
 			  </ul>
 		   </div>
 		   </div>
@@ -124,12 +130,12 @@ a.agrayright{
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="" ></li>
         <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
       </ol>
       <div class="carousel-inner">
         <div class="item">
-          <img src="./pic/bg1.jpg" data-src="" alt="First slide">
+          <img src="./pic/bg1.jpg" data-src="" alt="First slide" >
           
         </div>
         <div class="item">
@@ -140,6 +146,7 @@ a.agrayright{
           <img src="./pic/bg3.jpg" data-src="" alt="Third slide">
         
         </div>
+		
       </div>
       <a class="left carousel-control" href="http://bp.315ok.org/examples/carousel/#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="http://bp.315ok.org/examples/carousel/#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -325,7 +332,12 @@ a.agrayright{
    </div>
    </div>
    </div> 
-	 <p>版权所有 Copyright©2009-2015 边井文化创意有限公司&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp| <a href="about.html">关于我们</a>|<a href="contact.html"> 联系方式</a>| <a href="course.html">热门课程</a>| <a href="teachers.html">师资介绍</a>|&nbsp&nbsp&nbsp&nbsp<a href="http://weibo.com/jingchuanstudio"><img src="pic/wb.png" alt="" /></a>&nbsp&nbsp&nbsp&nbsp<a href="contact.html"> <img src="pic/wx.png" alt="" /></a>       </p>
+	 <p>版权所有 Copyright©2009-2015 边井文化创意有限公司&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp| <a href="about.html">关于我们</a>|<a href="contact.html"> 联系方式</a>| <a href="course.html">热门课程</a>| <a href="teachers.html">师资介绍</a>|&nbsp&nbsp&nbsp&nbsp<a href="http://weibo.com/jingchuanstudio"><img src="pic/wb.png" alt="" /></a>&nbsp&nbsp&nbsp&nbsp<a href="contact.html"> <img src="pic/wx.png" alt="" /></a>    
+	 
+	   
+	
+		
+	 </p>
 	</div>	
 
       </footer>
@@ -381,21 +393,6 @@ a.agrayright{
 	</script>
 	<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
 <script type="text/javascript" src="js/Xslider.js"></script>
-<script type="text/javascript">
-$(function(){
+<script type="text/javascript" src="js/jingchuan.js"></script>
 
-	
-	//三、自动切换;
-	$(".productshow:eq(0)").Xslider({
-		unitdisplayed:5,
-		numtoMove:3,
-		unitlen:235,
-		autoscroll:2000  //自动移动间隔时间     默认null不自动移动;
-	});
-	
-	
-	
-	$("a").focus(function(){this.blur();});
-})
-</script>
 </html>
